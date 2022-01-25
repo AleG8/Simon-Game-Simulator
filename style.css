@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #2C3E50;
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-reset{
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+}
+
+.btn-reset:hover{
+    cursor: pointer;
+}
+
+#circle{
+    border: 1rem solid #1C2833;
+    position: relative;
+    width: 26rem;
+    height: 26rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#circle::before{
+    content: '';
+    background-color: #1C2833;
+    position: absolute;
+    top: calc(50% - 0.5rem);
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    z-index: 100;
+}
+
+#circle::after{
+    content: '';
+    background-color: #1C2833;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 0.5rem);
+    width: 1rem;
+    height: 100%;
+}
+
+.active{
+    filter: brightness(1.5);
+}
+
+.colors-buttons{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;;
+}
+
+.color-btn:nth-child(1){
+    background-color: #006400;
+}
+
+.color-btn:nth-child(2){
+    background-color: #8B0000;
+}
+
+.color-btn:nth-child(3){
+    background-color: #DAA520;
+}
+
+.color-btn:nth-child(4){
+    background-color: #09096A;
+}
+
+.center{
+    background-color: #fff;
+    border: 0.7rem solid #1C2833;
+    width: 11rem;
+    height: 11rem;
+    padding-bottom: 2.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 200;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center h2{
+    color: #1C2833;
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+}
+
+.center .controls{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.8rem;
+    width: 100%;
+}
+
+.controls #count{
+    width: 2.5rem;
+    height: 1.8rem;
+    text-align: center;
+    background-color: #8B0000;
+    color: #ff0000;
+    border: 2px solid #000000;
+}
+
+.controls #start-btn{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(0, 117, 0);
+    border: 2px solid #1C2833;
+    border-radius: 50%;
+}
+
+#start-btn::after{
+    content: 'START';
+    position: absolute;
+    bottom: -1.3rem;
+    left: 0;
+    font-size: 0.65rem;
+}
+
+.controls #strict-btn{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(219, 161, 0);
+    border-radius: 50%;
+    border: 2px solid #1C2833;
+}
+
+#strict-btn::after{
+    content: 'STRICT';
+    position: absolute;
+    bottom: -1.3rem;
+    left: 0;
+    font-size: 0.65rem;
+}
+
+.controls button:active{
+    transform: scale(0.95);
+}
+
+/* Footer */
+
+footer{
+    color: white;
+    text-decoration: line-through;
+}
