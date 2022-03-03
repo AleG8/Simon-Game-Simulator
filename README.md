@@ -1,2 +1,2 @@
 # Simon-Game-Simulator
-with Javascript Vanilla
+Made with Javascript Vanilla. Play here: https://simon-game-simulator.netlify.app
